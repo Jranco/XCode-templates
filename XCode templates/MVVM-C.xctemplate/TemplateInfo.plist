@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Platforms</key>
+	<array/>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>module_name</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Module name</string>
+			<key>Description</key>
+			<string>The name of the Model, View and ViewModel to create</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>MyFile</string>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>com.jrancomobile.mvvmc.viewType</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>View type:</string>
+			<key>Description</key>
+			<string>The type of view to use</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Default</key>
+			<string>UIViewController</string>
+			<key>Values</key>
+			<array>
+				<string>UIView</string>
+				<string>UIViewController</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
