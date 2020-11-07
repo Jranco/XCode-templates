@@ -8,7 +8,10 @@
 
 import UIKit
 
-class ___FILEBASENAME___<ViewModel: ___VARIABLE_module_name___ViewModelProtocol>: UIViewController, CoordinatedViewProtocol {
+protocol ___FILEBASENAME___Protocol: CoordinatedViewProtocol, ___VARIABLE_module_name___ViewModelDelegate {
+}
+
+class ___FILEBASENAME___<ViewModel: ___VARIABLE_module_name___ViewModelProtocol>: UIViewController, ___FILEBASENAME___Protocol {
 
     // MARK: - ViewModel
     
@@ -43,5 +46,10 @@ class ___FILEBASENAME___<ViewModel: ___VARIABLE_module_name___ViewModelProtocol>
         if self.isMovingFromParent {
             self.viewModel?.willBeRemovedFromParent()
         }
+    }
+    
+    // MARK: - ___VARIABLE_module_name___ViewModelDelegate
+    
+    func updateView() {
     }
 }

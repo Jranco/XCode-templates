@@ -8,7 +8,12 @@
 
 import Foundation
 
+protocol ___FILEBASENAME___Delegate: class {
+    func updateView()
+}
+
 protocol ___FILEBASENAME___Protocol: CoordinatedViewModelProtocol {
+    var delegate: ___FILEBASENAME___Delegate? { get set }
 }
 
 class ___FILEBASENAME___<Model: ___VARIABLE_module_name___ModelProtocol>: ___FILEBASENAME___Protocol {
@@ -21,6 +26,10 @@ class ___FILEBASENAME___<Model: ___VARIABLE_module_name___ModelProtocol>: ___FIL
     
     var coordinatorDelegate: CoordinatorDelegate? { return coordinator }
     private weak var coordinator: ___VARIABLE_module_name___CoordinatorDelegate?
+    
+    // MARK: - Delegate
+    
+    weak var delegate: ___FILEBASENAME___Delegate?
     
     // MARK: LifeCycle
     
