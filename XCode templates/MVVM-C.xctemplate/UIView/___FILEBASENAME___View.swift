@@ -12,7 +12,7 @@ class ___FILEBASENAME___<ViewModel: ___VARIABLE_module_name___ViewModelProtocol>
 
     // MARK: - ViewModel
     
-    var viewModel: ViewModel?
+    var viewModel: ViewModel
     
     // MARK: - Subviews
     

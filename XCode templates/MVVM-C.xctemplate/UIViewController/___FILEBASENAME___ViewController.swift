@@ -15,13 +15,14 @@ class ___FILEBASENAME___<ViewModel: ___VARIABLE_module_name___ViewModelProtocol>
 
     // MARK: - ViewModel
     
-    var viewModel: ViewModel?
+    var viewModel: ViewModel
     
     // MARK: - LifeCycle
     
     convenience init(viewModel: ViewModel) {
         self.init(nibName: String(describing: "___FILEBASENAME___"), bundle: nil)
         self.viewModel = viewModel
+        viewModel.delegate = self
     }
     
     override func viewDidLoad() {

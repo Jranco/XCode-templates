@@ -15,7 +15,7 @@ class ___FILEBASENAME___<Model: ___VARIABLE_module_name___ModelProtocol>: ___FIL
     
     // MARK: - ViewModel
     
-    var model: Model?
+    var model: Model
     
     // MARK: - Coordinator
     
