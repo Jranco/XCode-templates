@@ -39,6 +39,7 @@
 			<array>
 				<string>UIView</string>
 				<string>UIViewController</string>
+				<string>CoordinatedViewController</string>
 			</array>
 		</dict>
 	</array>

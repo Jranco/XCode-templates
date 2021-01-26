@@ -7,15 +7,12 @@
 //
 
 import UIKit
+import JarMVVMC
 
 protocol ___FILEBASENAME___Protocol: ___VARIABLE_module_name___ViewModelDelegate {
 }
 
 class ___FILEBASENAME___<ViewModel: ___VARIABLE_module_name___ViewModelProtocol>: CoordinatedViewController<ViewModel>, ___FILEBASENAME___Protocol {
-
-    // MARK: - ViewModel
-    
-    var viewModel: ViewModel
     
     // MARK: - LifeCycle
     
@@ -26,6 +23,7 @@ class ___FILEBASENAME___<ViewModel: ___VARIABLE_module_name___ViewModelProtocol>
     }
     
     override func configureSubviews() {
+        super.configureSubviews()
     }
     
     // MARK: - ___VARIABLE_module_name___ViewModelDelegate

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JarMVVMC
 
 class ___FILEBASENAME___<ViewModel: ___VARIABLE_module_name___ViewModelProtocol>: UIView, CoordinatedViewProtocol {
 

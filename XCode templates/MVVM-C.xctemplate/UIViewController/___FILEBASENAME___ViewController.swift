@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JarMVVMC
 
 protocol ___FILEBASENAME___Protocol: CoordinatedViewProtocol, ___VARIABLE_module_name___ViewModelDelegate {
 }
@@ -15,7 +16,7 @@ class ___FILEBASENAME___<ViewModel: ___VARIABLE_module_name___ViewModelProtocol>
 
     // MARK: - ViewModel
     
-    var viewModel: ViewModel
+    var viewModel: ViewModel?
     
     // MARK: - LifeCycle
     
@@ -43,10 +44,6 @@ class ___FILEBASENAME___<ViewModel: ___VARIABLE_module_name___ViewModelProtocol>
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.viewModel?.willDisappear()
-        
-        if self.isMovingFromParent {
-            self.viewModel?.willBeRemovedFromParent()
-        }
     }
     
     // MARK: - ___VARIABLE_module_name___ViewModelDelegate

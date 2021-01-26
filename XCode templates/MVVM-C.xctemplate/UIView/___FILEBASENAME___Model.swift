@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import JarMVVMC
 
 protocol ___FILEBASENAME___Protocol: CoordinatedModelProtocol {
 }
