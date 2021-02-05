@@ -40,6 +40,7 @@
 				<string>UIView</string>
 				<string>UIViewController</string>
 				<string>CoordinatedViewController</string>
+				<string>CoordinatedUIHostingController</string>
 			</array>
 		</dict>
 	</array>
